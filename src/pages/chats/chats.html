@@ -1,0 +1,16 @@
+<ion-header>
+  <ion-navbar color="hcolor">
+    <ion-title>Chats</ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only (click)="addBuddy()">
+        <ion-icon name="person-add"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <h2 *ngIf="profileData">Welcome to Ionic! {{(profileData)?.username}}</h2>
+
+
+</ion-content>

@@ -1,0 +1,8 @@
+{
+  "name": "simpleChat",
+  "app_id": "39d8678a",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}

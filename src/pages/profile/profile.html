@@ -1,0 +1,33 @@
+<ion-header>
+
+  <ion-navbar color="blablabla">
+    <ion-title>Profile</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+  <div class="profile-image" (click)="editImage()">
+    <img src="{{avatar}}">
+  </div>
+
+  <ion-item>
+    <ion-label floating>Username</ion-label>
+    <ion-input [(ngModel)]="profile.username" value="{{(profileData)?.username}}"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label floating>First Name</ion-label>
+    <ion-input [(ngModel)]="profile.firstName" value="{{(profileData)?.firstName}}"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label floating>Last Name</ion-label>
+    <ion-input [(ngModel)]="profile.lastName" value="{{(profileData)?.lastName}}"></ion-input>
+  </ion-item>
+
+  <button ion-button round block (click)="createProfile()" [disabled]="!profile.username || !profile.lastName || !profile.firstName">Update Profile</button>
+
+</ion-content>
